@@ -3,7 +3,7 @@ import Images from "../assets/assets";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#313134] text-white py-10 px-6 md:px-14">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center items-start justify-center h-[360px] md:h-[150px] lg:h-[100px]">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center items-start justify-center h-[380px] md:h-[150px] lg:h-[100px]">
         {/* Column 1: Logo */}
         <div className="flex justify-center md:justify-start w-full">
           <img
