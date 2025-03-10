@@ -1,0 +1,15 @@
+.bg-Calendar{
+    background-image: url("../assets/pictures/CalendarBg.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg-SectionCalendar{
+    background-image: url("../assets/pictures/CalenderSection.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}

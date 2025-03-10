@@ -1,0 +1,23 @@
+.section2{
+    background-image: url("../assets/pictures/AboutUsSection_2.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg-aboutus{
+    background-image: url("../assets/pictures/AboutUsBg.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg-aboutus_2{
+    background-image: url("../assets/pictures/AboutUsBg.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}

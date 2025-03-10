@@ -1,0 +1,7 @@
+.bg-ContactUs{
+    background-image: url("../assets/pictures/ContactUs.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}

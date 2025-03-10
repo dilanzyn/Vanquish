@@ -1,0 +1,7 @@
+.bg{
+    background-image: url("../assets/pictures/GalleryBg.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}

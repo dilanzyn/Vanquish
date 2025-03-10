@@ -1,0 +1,146 @@
+/* Card Slider Container */
+.card-slider {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* Wrapper to Hold All Slides */
+.card-slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 10px;
+  will-change: transform;
+}
+
+/* Individual Slide */
+.card-slide {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease;
+}
+
+/* Card Styling */
+.card {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Card Content */
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Navigation Arrows */
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  pointer-events: auto;
+  transition: background 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.arrow.prev {
+  left: 15px;
+}
+
+.arrow.next {
+  right: 15px;
+}
+
+.arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVENESS */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .card-slide {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .card-image {
+    height: 400px;
+  }
+
+  .arrow {
+    padding: 10px;
+  }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+  .card-slide {
+    flex: 0 0 100%;
+  }
+
+  .card-image {
+    height: 300px;
+  }
+
+  .arrow {
+    padding: 8px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .arrow {
+    padding: 6px;
+  }
+}

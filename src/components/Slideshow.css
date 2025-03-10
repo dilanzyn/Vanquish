@@ -1,0 +1,103 @@
+/* Slideshow container */
+.slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Max width for large screens */
+  height: 70vh; /* Use viewport height for responsiveness */
+  max-height: 600px; /* Prevents the slideshow from getting too large */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Wrapper for the slide */
+.slideshow-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide images */
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  object-position: center; /* Centers the image */
+  display: block;
+}
+
+/* Navigation buttons */
+.slideshow button {
+  position: absolute;
+  top: 50%; /* Centers the button vertically */
+  transform: translateY(-50%); /* Ensures perfect centering */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: solid;
+  border-color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Hover effect */
+.slideshow button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Left button */
+.slideshow button:first-of-type {
+  left: 20px; /* Moves it inside the slideshow */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right button */
+.slideshow button:last-of-type {
+  right: 20px; /* Moves it inside the slideshow */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .slideshow {
+    width: 95%; /* Increase width for smaller screens */
+    height: 45vh; /* Reduce height slightly */
+  }
+
+  .slideshow button {
+    width: 40px; /* Smaller buttons */
+    height: 40px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    width: 100%;
+    height: 40vh; /* Further reduce height for smaller devices */
+  }
+
+  .slideshow button {
+    width: 35px; /* Smaller buttons on very small screens */
+    height: 35px;
+    padding: 8px;
+  }
+}
