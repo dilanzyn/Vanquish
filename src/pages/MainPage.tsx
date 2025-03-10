@@ -77,7 +77,7 @@ const MainPage: React.FC = () => {
   return (
     <>
       <section className="cover">
-        <div className="pt-[110px] h-screen grid">
+        <div className="pt-[110px] min-h-screen grid">
         <video className="background-video" autoPlay muted loop>
         <source src={Images.video.Overlay} type="video/mp4" />
       </video>

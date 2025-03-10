@@ -17,6 +17,7 @@ export default {
       animation: {
         'spin-slow': 'spin 60s linear infinite',
         "fade-in-up": "fade-in-up 1s ease-out forwards", 
+      
       },
 
       fontFamily: {
@@ -25,6 +26,7 @@ export default {
       screens: {
         '2xl': '1920px',
         '3xl': '2560px',
+        'pixel7': { 'raw': '(min-width: 412px) and (min-height: 900px)' }
       },
     },
   },
