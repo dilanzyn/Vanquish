@@ -17,14 +17,6 @@ const achievementsData: Record<
         ],
         
       },
-      { 
-        title: "WBC Muay Thai Championship", 
-        details: [
-          "Miyushi Dharmaratne – Super bantamweight – Champion",
-          "Gevin Linden – Heavyweight – Champion"
-        ],
-        
-      }
     ],
     image: "/images/2025-trophy.jpg",
   },
