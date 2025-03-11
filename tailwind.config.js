@@ -26,7 +26,6 @@ export default {
       screens: {
         '2xl': '1920px',
         '3xl': '2560px',
-        'pixel7': { 'raw': '(min-width: 412px) and (min-height: 900px)' }
       },
     },
   },

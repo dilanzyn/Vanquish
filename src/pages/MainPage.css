@@ -44,7 +44,6 @@ section{
     lg:translate-x-[1.5%] lg:translate-y-[-30%] lg:scale-[0.4]
     xl:translate-x-[1%] xl:translate-y-[-32%] xl:scale-[0.37]
     2xl:translate-x-[1%] 2xl:translate-y-[-28%] 2xl:scale-[0.39]
-    pixel7:translate-x-[2%] pixel7:translate-y-[-12%] pixel7:scale-[1.2];
 }
 
 .btn-main{
